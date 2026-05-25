@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && ls -la && echo '===== DIST FOLDER =====' && ls -la dist || echo 'DIST NOT FOUND'",
     "dev": "vite",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
